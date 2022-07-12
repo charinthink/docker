@@ -1,0 +1,15 @@
+FROM nginx
+
+WORKDIR /home/test
+
+COPY ./test .
+
+ARG NAME POR
+
+ENV override ค่าในตอน run
+
+EXPOSE <port>
+
+CMD [] สามารถ override
+
+ENTRYPOINT [] ไม่สามารถ override

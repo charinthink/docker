@@ -1,0 +1,7 @@
+FROM alpine
+
+ARG NAME 
+
+RUN echo ${NAME} >> test.txt
+
+CMD ["cat", "test.txt"]

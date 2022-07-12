@@ -1,0 +1,7 @@
+FROM alpine
+
+RUN apk add openjdk11
+
+ENTRYPOINT ["java", "--version"]
+
+# CMD ["java", "--version"]
